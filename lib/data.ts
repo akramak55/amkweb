@@ -208,6 +208,46 @@ export const process = [
   },
 ];
 
+export const faqs = [
+  {
+    q: "Quels types d'événements produisez-vous ?",
+    a: "Lancements de marque, galas, mariages et cérémonies privées, défilés, conventions corporate, vernissages. Notre fil conducteur n'est pas le format, mais l'exigence d'un moment sur-mesure.",
+  },
+  {
+    q: "Intervenez-vous uniquement en France ?",
+    a: "Non — nous produisons régulièrement à l'international. Nos bureaux sont à Paris, Genève et Marrakech ; nous avons travaillé dans 27 pays. Un chef de projet francophone reste votre interlocuteur unique où que se tienne l'événement.",
+  },
+  {
+    q: "À partir de quand devons-nous vous contacter ?",
+    a: "Idéalement 6 à 12 mois avant, pour les grandes productions. Pour des formats plus ramassés (défilé, cocktail presse, soirée privée), un délai de 2 à 3 mois est envisageable si nos plannings le permettent.",
+  },
+  {
+    q: "Avez-vous un budget minimum ?",
+    a: "Nous travaillons à partir de budgets permettant un vrai engagement créatif et technique — typiquement au-delà de 60 000 € HT. En-deçà, nous orientons volontiers vers des partenaires de confiance.",
+  },
+  {
+    q: "Êtes-vous soumis à la confidentialité ?",
+    a: "Oui, toujours. Une grande partie de nos références ne figure pas publiquement. Nous signons sans difficulté tout NDA nécessaire et protégeons votre identité à chaque étape.",
+  },
+  {
+    q: "Comment se déroule un premier rendez-vous ?",
+    a: "Nous échangeons d'abord 30 à 45 minutes — en visio ou au studio — sur vos intentions, contraintes et repères. Si nous avançons ensemble, nous revenons 10 à 15 jours plus tard avec une première direction et un budget indicatif.",
+  },
+];
+
+export const clients = [
+  "Maison Lumière",
+  "Fondation Trois Rivières",
+  "Atlas Group",
+  "Villa Médicis",
+  "Crillon Paris",
+  "Domaine de la Trappe",
+  "Horlogerie Pascal Meier",
+  "Fontaine Parfums",
+  "Opéra Garnier",
+  "Institut Varèse",
+];
+
 export const testimonials = [
   {
     quote:

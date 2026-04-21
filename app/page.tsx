@@ -7,6 +7,7 @@ import { ServiceCard } from "@/components/service-card";
 import { EventCard } from "@/components/event-card";
 import { Marquee } from "@/components/marquee";
 import { Testimonials } from "@/components/testimonials";
+import { Clients } from "@/components/clients";
 import { events, services, stats } from "@/lib/data";
 
 export default function HomePage() {
@@ -166,6 +167,16 @@ export default function HomePage() {
             ))}
           </div>
         </Container>
+      </section>
+
+      {/* Clients */}
+      <section className="py-24 lg:py-28 border-t border-[var(--color-border)]">
+        <Container className="mb-12">
+          <p className="text-[11px] tracking-[0.3em] uppercase text-[var(--color-muted-foreground)] text-center">
+            Quelques maisons qui nous font confiance
+          </p>
+        </Container>
+        <Clients />
       </section>
 
       {/* Testimonials */}

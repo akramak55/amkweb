@@ -1,6 +1,8 @@
 import { Container } from "@/components/ui/container";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
+import { SectionHeading } from "@/components/ui/section-heading";
 import { ContactForm } from "@/components/contact-form";
+import { Faq } from "@/components/faq";
 import { site } from "@/lib/site";
 import type { Metadata } from "next";
 
@@ -84,6 +86,28 @@ export default function ContactPage() {
 
             <div className="lg:col-span-8">
               <ContactForm />
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="py-32 lg:py-40 border-t border-[var(--color-border)]">
+        <Container>
+          <div className="grid gap-16 lg:grid-cols-12">
+            <div className="lg:col-span-4">
+              <SectionHeading
+                eyebrow="Questions fréquentes"
+                title={
+                  <>
+                    Les réponses
+                    <br />
+                    <span className="italic gold-gradient">aux questions qu&apos;on nous pose.</span>
+                  </>
+                }
+              />
+            </div>
+            <div className="lg:col-span-8">
+              <Faq />
             </div>
           </div>
         </Container>
