@@ -2,6 +2,7 @@ import { Container } from "@/components/ui/container";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
 import { ButtonLink } from "@/components/ui/button";
 import { EventCard } from "@/components/event-card";
+import { JsonLd, eventSchema } from "@/components/json-ld";
 import { events } from "@/lib/data";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
@@ -37,6 +38,7 @@ export default async function EventPage(
 
   return (
     <>
+      <JsonLd data={eventSchema(event)} />
       <section className="pt-32 pb-16 lg:pt-44">
         <Container>
           <ScrollReveal>

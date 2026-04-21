@@ -3,6 +3,8 @@ import { Inter, Playfair_Display } from "next/font/google";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { CustomCursor } from "@/components/cursor";
+import { CookieBanner } from "@/components/cookie-banner";
+import { JsonLd, organizationSchema } from "@/components/json-ld";
 import { site } from "@/lib/site";
 import "./globals.css";
 
@@ -52,6 +54,7 @@ export default function RootLayout({
   return (
     <html lang="fr" className={`${inter.variable} ${playfair.variable}`}>
       <body>
+        <JsonLd data={organizationSchema()} />
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-[var(--color-primary)] focus:text-[var(--color-primary-foreground)]"
@@ -64,6 +67,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <CookieBanner />
       </body>
     </html>
   );

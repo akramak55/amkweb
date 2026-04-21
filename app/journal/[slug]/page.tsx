@@ -2,6 +2,7 @@ import { Container } from "@/components/ui/container";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
 import { ButtonLink } from "@/components/ui/button";
 import { ArticleCard } from "@/components/article-card";
+import { JsonLd, articleSchema } from "@/components/json-ld";
 import { articles } from "@/lib/journal";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
@@ -44,6 +45,7 @@ export default async function ArticlePage(
 
   return (
     <>
+      <JsonLd data={articleSchema(article)} />
       <section className="pt-32 pb-16 lg:pt-44">
         <Container size="md">
           <ScrollReveal>
