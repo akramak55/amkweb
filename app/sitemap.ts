@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { events } from "@/lib/data";
+import { articles } from "@/lib/journal";
 import { site } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -9,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${site.url}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${site.url}/services`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${site.url}/events`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${site.url}/journal`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${site.url}/gallery`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${site.url}/contact`, lastModified: now, changeFrequency: "yearly", priority: 0.5 },
   ];
@@ -19,6 +21,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "yearly",
       priority: 0.6,
+    });
+  }
+
+  for (const article of articles) {
+    routes.push({
+      url: `${site.url}/journal/${article.slug}`,
+      lastModified: new Date(article.dateISO),
+      changeFrequency: "yearly",
+      priority: 0.5,
     });
   }
 

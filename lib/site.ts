@@ -16,6 +16,7 @@ export const site = {
     { href: "/about", label: "L'agence" },
     { href: "/services", label: "Services" },
     { href: "/events", label: "Événements" },
+    { href: "/journal", label: "Journal" },
     { href: "/gallery", label: "Galerie" },
     { href: "/contact", label: "Contact" },
   ],

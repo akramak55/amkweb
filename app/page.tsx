@@ -8,7 +8,9 @@ import { EventCard } from "@/components/event-card";
 import { Marquee } from "@/components/marquee";
 import { Testimonials } from "@/components/testimonials";
 import { Clients } from "@/components/clients";
+import { ArticleCard } from "@/components/article-card";
 import { events, services, stats } from "@/lib/data";
+import { articles } from "@/lib/journal";
 
 export default function HomePage() {
   return (
@@ -194,6 +196,34 @@ export default function HomePage() {
             className="mb-20"
           />
           <Testimonials />
+        </Container>
+      </section>
+
+      {/* Journal */}
+      <section className="py-32 lg:py-40 border-t border-[var(--color-border)]">
+        <Container>
+          <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-10 mb-20">
+            <SectionHeading
+              eyebrow="Journal"
+              title={
+                <>
+                  Ce qu&apos;on écrit
+                  <br />
+                  <span className="italic gold-gradient">entre deux productions.</span>
+                </>
+              }
+              description="Essais courts, coulisses, convictions d'atelier."
+            />
+            <ButtonLink href="/journal" variant="outline" withArrow>
+              Tout lire
+            </ButtonLink>
+          </div>
+
+          <div className="grid gap-x-8 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
+            {articles.slice(0, 3).map((article, i) => (
+              <ArticleCard key={article.slug} article={article} index={i} />
+            ))}
+          </div>
         </Container>
       </section>
 
