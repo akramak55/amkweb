@@ -41,7 +41,15 @@ export default function EventsPage() {
         <Container>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {events.map((event, i) => (
-              <EventCard key={event.slug} {...event} index={i} />
+              <EventCard
+                key={event.slug}
+                title={event.title}
+                category={event.category}
+                location={event.location}
+                year={event.year}
+                href={`/events/${event.slug}`}
+                index={i}
+              />
             ))}
           </div>
         </Container>

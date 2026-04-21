@@ -6,6 +6,7 @@ import { Hero } from "@/components/hero";
 import { ServiceCard } from "@/components/service-card";
 import { EventCard } from "@/components/event-card";
 import { Marquee } from "@/components/marquee";
+import { Testimonials } from "@/components/testimonials";
 import { events, services, stats } from "@/lib/data";
 
 export default function HomePage() {
@@ -153,40 +154,35 @@ export default function HomePage() {
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {events.slice(0, 6).map((event, i) => (
-              <EventCard key={event.slug} {...event} index={i} />
+              <EventCard
+                key={event.slug}
+                title={event.title}
+                category={event.category}
+                location={event.location}
+                year={event.year}
+                href={`/events/${event.slug}`}
+                index={i}
+              />
             ))}
           </div>
         </Container>
       </section>
 
-      {/* Quote */}
-      <section className="py-32 lg:py-48 border-t border-[var(--color-border)]">
-        <Container size="md">
-          <ScrollReveal>
-            <blockquote className="flex flex-col gap-10 items-start">
-              <span
-                aria-hidden
-                className="font-serif text-8xl leading-none text-[var(--color-primary)] opacity-60"
-              >
-                &ldquo;
-              </span>
-              <p className="font-serif text-3xl sm:text-4xl lg:text-5xl text-balance leading-[1.2]">
-                Ce que nous aimons chez AMK, c&apos;est cette façon rare de faire disparaître le dispositif pour ne laisser que l&apos;émotion. Rien ne dépasse, tout est juste.
-              </p>
-              <footer className="flex items-center gap-4 text-sm">
-                <span
-                  aria-hidden
-                  className="h-px w-10 bg-[var(--color-primary)]"
-                />
-                <cite className="not-italic">
-                  <span className="font-serif text-lg">Camille Rivière</span>
-                  <span className="text-[var(--color-muted-foreground)] ml-3">
-                    Directrice Mécénat, Maison Lumière
-                  </span>
-                </cite>
-              </footer>
-            </blockquote>
-          </ScrollReveal>
+      {/* Testimonials */}
+      <section className="py-32 lg:py-40 border-t border-[var(--color-border)]">
+        <Container>
+          <SectionHeading
+            eyebrow="Ils nous ont confié leurs moments"
+            title={
+              <>
+                Paroles
+                <br />
+                <span className="italic gold-gradient">de clients.</span>
+              </>
+            }
+            className="mb-20"
+          />
+          <Testimonials />
         </Container>
       </section>
 
