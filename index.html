@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AMK Hebbache Immobilier — Promoteur immobilier de prestige à Alger. Appartements F4, F5, Penthouses et Duplex dans les meilleurs quartiers d'Alger.">
+  <title>AMK Hebbache Immobilier | Promotion Immobilière de Luxe à Alger</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/luxury.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+
+      <a href="index.html" class="nav-logo">
+        <span class="logo-amk">AMK</span>
+        <div class="logo-text">
+          <span>HEBBACHE</span>
+          <small>IMMOBILIER</small>
+        </div>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu" role="list">
+        <li><a href="index.html" class="nav-link active">Accueil</a></li>
+        <li class="has-dropdown">
+          <a href="projets.html" class="nav-link">Nos Projets <span class="arrow">&#9662;</span></a>
+          <ul class="dropdown" role="list">
+            <li><a href="projets-en-cours.html">En Cours de Réalisation</a></li>
+            <li><a href="projets-livres.html">Projets Livrés</a></li>
+            <li><a href="projets-futurs.html">Projets Futurs</a></li>
+          </ul>
+        </li>
+        <li><a href="a-propos.html" class="nav-link">À Propos</a></li>
+        <li><a href="visite-virtuelle.html" class="nav-link">Visite Virtuelle</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li class="nav-lang">
+          <a href="#" class="lang-btn active" aria-current="true">FR</a>
+          <span class="lang-sep">|</span>
+          <a href="en/" class="lang-btn">EN</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section class="hero" id="hero" aria-label="Page d'accueil">
+    <div class="hero-bg" aria-hidden="true">
+      <img
+        src="https://images.unsplash.com/photo-1613977257592-4871e5fcd7c4?q=80&w=1920&auto=format&fit=crop"
+        alt=""
+        class="hero-img"
+        fetchpriority="high"
+      >
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-pre">Promoteur Immobilier de Prestige</p>
+      <h1 class="hero-title">
+        <span class="hero-title-line">L'Art de</span>
+        <em class="hero-title-line">Vivre à Alger</em>
+      </h1>
+      <p class="hero-subtitle">
+        Plus de 30 ans d'excellence au service de l'immobilier haut de gamme en Algérie
+      </p>
+      <div class="hero-cta">
+        <a href="projets.html" class="btn-gold">Découvrir Nos Projets</a>
+        <a href="contact.html" class="btn-outline">Nous Contacter</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span>Défiler</span>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       GOLD DIVIDER
+  ══════════════════════════════════════ -->
+  <div class="gold-divider" aria-hidden="true">
+    <div class="gold-line"></div>
+    <span class="gold-diamond">◆</span>
+    <div class="gold-line"></div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       STATS
+  ══════════════════════════════════════ -->
+  <section class="stats" aria-label="Chiffres clés">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item" data-target="30" data-suffix="+">
+          <span class="stat-number">30+</span>
+          <span class="stat-label">Ans d'Expérience</span>
+        </div>
+        <span class="stat-sep" aria-hidden="true">◆</span>
+        <div class="stat-item" data-target="500" data-suffix="+">
+          <span class="stat-number">500+</span>
+          <span class="stat-label">Appartements Livrés</span>
+        </div>
+        <span class="stat-sep" aria-hidden="true">◆</span>
+        <div class="stat-item" data-target="6" data-suffix="">
+          <span class="stat-number">6</span>
+          <span class="stat-label">Résidences de Prestige</span>
+        </div>
+        <span class="stat-sep" aria-hidden="true">◆</span>
+        <div class="stat-item" data-target="145" data-suffix="m²+">
+          <span class="stat-number">145m²+</span>
+          <span class="stat-label">Surfaces à Partir de</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       PROJETS EN COURS
+  ══════════════════════════════════════ -->
+  <section class="section projects-current" id="projets" aria-labelledby="projets-title">
+    <div class="container">
+
+      <div class="section-header fade-in">
+        <p class="section-pre">Excellence &amp; Prestige</p>
+        <h2 class="section-title" id="projets-title">Projets en Cours<br><em>de Réalisation</em></h2>
+        <div class="title-ornament" aria-hidden="true">
+          <span>——</span><span class="gold-diamond-sm">◆</span><span>——</span>
+        </div>
+      </div>
+
+      <div class="projects-featured">
+
+        <!-- Résidence Floria -->
+        <article class="project-card featured fade-in">
+          <div class="project-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200&auto=format&fit=crop"
+              alt="Résidence Floria — Bir Mourad Raïs"
+              loading="lazy"
+            >
+            <div class="project-badge" aria-label="Statut">En Cours</div>
+            <div class="project-overlay" aria-hidden="true">
+              <a href="residence-floria.html" class="btn-gold-sm">Voir le Projet</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <p class="project-location">◆ Bir Mourad Raïs, Alger</p>
+            <h3 class="project-name">Résidence <em>Floria</em></h3>
+            <p class="project-desc">
+              56 appartements de standing exceptionnels — F3, F4, F5 Duplex et Penthouses somptueux à partir de 145 m².
+              Un cadre idyllique alliant sérénité résidentielle et accessibilité immédiate à Ben Aknoun et Hydra.
+            </p>
+            <div class="project-tags" aria-label="Types de logements">
+              <span>F3 · F4 · F5</span>
+              <span>Duplex</span>
+              <span>Penthouse</span>
+              <span>Dès 145 m²</span>
+            </div>
+            <a href="residence-floria.html" class="project-link">Découvrir ↗</a>
+          </div>
+        </article>
+
+        <!-- Résidence Renaissance -->
+        <article class="project-card featured fade-in">
+          <div class="project-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop"
+              alt="Résidence Renaissance — Saïd Hamdine"
+              loading="lazy"
+            >
+            <div class="project-badge" aria-label="Statut">En Cours</div>
+            <div class="project-overlay" aria-hidden="true">
+              <a href="residence-renaissance.html" class="btn-gold-sm">Voir le Projet</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <p class="project-location">◆ Saïd Hamdine, Alger</p>
+            <h3 class="project-name">Résidence <em>Renaissance</em></h3>
+            <p class="project-desc">
+              28 appartements d'exception incarnant l'élégance, le confort et le raffinement absolu.
+              F4 et F5 spacieux ainsi que des locaux commerciaux dans l'un des quartiers les plus prisés d'Alger.
+            </p>
+            <div class="project-tags" aria-label="Types de logements">
+              <span>F4 · F5</span>
+              <span>Locaux Commerciaux</span>
+              <span>Haut Standing</span>
+            </div>
+            <a href="residence-renaissance.html" class="project-link">Découvrir ↗</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       PROJETS LIVRÉS
+  ══════════════════════════════════════ -->
+  <section class="section projects-delivered" aria-labelledby="livres-title">
+    <div class="container">
+
+      <div class="section-header fade-in">
+        <p class="section-pre">Notre Héritage</p>
+        <h2 class="section-title" id="livres-title">Projets <em>Livrés</em></h2>
+        <div class="title-ornament" aria-hidden="true">
+          <span>——</span><span class="gold-diamond-sm">◆</span><span>——</span>
+        </div>
+        <p class="section-desc">
+          Chaque résidence livrée témoigne de notre engagement indéfectible envers l'excellence
+          et la qualité de construction.
+        </p>
+      </div>
+
+      <div class="delivered-grid">
+
+        <article class="delivered-card fade-in">
+          <div class="delivered-img">
+            <img
+              src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=800&auto=format&fit=crop"
+              alt="Résidence El Djenane"
+              loading="lazy"
+            >
+            <div class="delivered-overlay" aria-hidden="true">
+              <a href="residence-el-djenane.html" class="btn-gold-sm">En Savoir Plus</a>
+            </div>
+          </div>
+          <div class="delivered-info">
+            <span class="delivered-tag">Livré</span>
+            <h4>Résidence El Djenane</h4>
+            <p>170 appartements — F3, F4, F5, Penthouses &amp; Commerces</p>
+          </div>
+        </article>
+
+        <article class="delivered-card fade-in">
+          <div class="delivered-img">
+            <img
+              src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=800&auto=format&fit=crop"
+              alt="Golden Residences"
+              loading="lazy"
+            >
+            <div class="delivered-overlay" aria-hidden="true">
+              <a href="golden-residences.html" class="btn-gold-sm">En Savoir Plus</a>
+            </div>
+          </div>
+          <div class="delivered-info">
+            <span class="delivered-tag">Livré</span>
+            <h4>Golden Residences</h4>
+            <p>Résidence d'exception — Alger</p>
+          </div>
+        </article>
+
+        <article class="delivered-card fade-in">
+          <div class="delivered-img">
+            <img
+              src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?q=80&w=800&auto=format&fit=crop"
+              alt="Résidence Edne"
+              loading="lazy"
+            >
+            <div class="delivered-overlay" aria-hidden="true">
+              <a href="residence-edne.html" class="btn-gold-sm">En Savoir Plus</a>
+            </div>
+          </div>
+          <div class="delivered-info">
+            <span class="delivered-tag">Livré</span>
+            <h4>Résidence Edne</h4>
+            <p>Appartements haut standing — Alger</p>
+          </div>
+        </article>
+
+        <article class="delivered-card fade-in">
+          <div class="delivered-img">
+            <img
+              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=800&auto=format&fit=crop"
+              alt="Les Deux Palmiers"
+              loading="lazy"
+            >
+            <div class="delivered-overlay" aria-hidden="true">
+              <a href="les-deux-palmiers.html" class="btn-gold-sm">En Savoir Plus</a>
+            </div>
+          </div>
+          <div class="delivered-info">
+            <span class="delivered-tag">Livré</span>
+            <h4>Les Deux Palmiers</h4>
+            <p>Résidence de prestige — Alger</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       À PROPOS
+  ══════════════════════════════════════ -->
+  <section class="section about-section" id="about" aria-labelledby="about-title">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-img-col fade-in">
+          <div class="about-img-frame">
+            <img
+              src="https://images.unsplash.com/photo-1560472355-536de3962603?q=80&w=800&auto=format&fit=crop"
+              alt="Sofiane Hebbache — Fondateur AMK Hebbache Immobilier"
+              loading="lazy"
+            >
+            <div class="about-img-border" aria-hidden="true"></div>
+          </div>
+          <div class="about-signature">
+            <span>Sofiane Hebbache</span>
+            <small>Fondateur &amp; Directeur Général</small>
+          </div>
+        </div>
+
+        <div class="about-content fade-in">
+          <p class="section-pre">Qui Sommes-Nous</p>
+          <h2 class="section-title" id="about-title">
+            Une Vision,<br>
+            <em>Une Passion,<br>Une Excellence</em>
+          </h2>
+          <div class="title-ornament left" aria-hidden="true">
+            <span>——</span><span class="gold-diamond-sm">◆</span><span>——</span>
+          </div>
+          <p class="about-text">
+            Fondée sur l'expertise et la vision de <strong>M. Sofiane Hebbache</strong>,
+            AMK Hebbache Immobilier est une société spécialisée dans la promotion immobilière
+            à Alger, forte de plus de <strong>30 ans d'expérience</strong> dans le domaine
+            de l'immobilier et de la construction.
+          </p>
+          <p class="about-text">
+            Notre engagement est de créer des espaces de vie et de travail qui allient
+            sophistication, confort et qualité de construction sans pareille. Chaque résidence
+            est conçue pour offrir une expérience de vie exceptionnelle, dans les quartiers
+            les plus stratégiques de la capitale.
+          </p>
+          <div class="about-values">
+            <div class="value-item">
+              <span class="value-icon" aria-hidden="true">◆</span>
+              <div>
+                <strong>Excellence</strong>
+                <p>Des matériaux premium et des finitions irréprochables</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <span class="value-icon" aria-hidden="true">◆</span>
+              <div>
+                <strong>Innovation</strong>
+                <p>Technologies modernes et design contemporain</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <span class="value-icon" aria-hidden="true">◆</span>
+              <div>
+                <strong>Prestige</strong>
+                <p>Emplacements stratégiques dans les quartiers prisés d'Alger</p>
+              </div>
+            </div>
+          </div>
+          <a href="a-propos.html" class="btn-gold">En Savoir Plus</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       BLOG
+  ══════════════════════════════════════ -->
+  <section class="section blog-section" aria-labelledby="blog-title">
+    <div class="container">
+
+      <div class="section-header fade-in">
+        <p class="section-pre">Actualités &amp; Conseils</p>
+        <h2 class="section-title" id="blog-title">Notre Blog <em>Immobilier</em></h2>
+        <div class="title-ornament" aria-hidden="true">
+          <span>——</span><span class="gold-diamond-sm">◆</span><span>——</span>
+        </div>
+      </div>
+
+      <div class="blog-grid">
+
+        <article class="blog-card fade-in">
+          <div class="blog-img">
+            <img
+              src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=600&auto=format&fit=crop"
+              alt="Penthouse luxe Alger"
+              loading="lazy"
+            >
+            <span class="blog-cat">Lifestyle</span>
+          </div>
+          <div class="blog-content">
+            <span class="blog-date">Mai 2025</span>
+            <h4>Vivre l'Exceptionnel : Penthouse &amp; Duplex Haut Standing à Alger</h4>
+            <p>Découvrez pourquoi les penthouses et duplexes représentent le summum de l'art de vivre à Alger...</p>
+            <a href="blog/vivre-exceptionnel-penthouse-duplex-haut-standing-alger.html" class="blog-link">Lire l'Article ↗</a>
+          </div>
+        </article>
+
+        <article class="blog-card fade-in">
+          <div class="blog-img">
+            <img
+              src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=600&auto=format&fit=crop"
+              alt="Cuisine équipée luxe"
+              loading="lazy"
+            >
+            <span class="blog-cat">Conseils</span>
+          </div>
+          <div class="blog-content">
+            <span class="blog-date">Avril 2025</span>
+            <h4>Cuisine Équipée : L'Art de Conjuguer Esthétisme et Fonctionnalité</h4>
+            <p>Une cuisine bien équipée est le cœur battant d'un foyer. Découvrez nos conseils pour choisir...</p>
+            <a href="blog/cuisine-equipee.html" class="blog-link">Lire l'Article ↗</a>
+          </div>
+        </article>
+
+        <article class="blog-card fade-in">
+          <div class="blog-img">
+            <img
+              src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?q=80&w=600&auto=format&fit=crop"
+              alt="Immobilier haut standing Alger 2025"
+              loading="lazy"
+            >
+            <span class="blog-cat">Investissement</span>
+          </div>
+          <div class="blog-content">
+            <span class="blog-date">Mars 2025</span>
+            <h4>Comment l'Immobilier Haut Standing Évolue en Algérie en 2025</h4>
+            <p>Analyse des tendances du marché immobilier de luxe à Alger et perspectives pour les investisseurs...</p>
+            <a href="blog/immobilier-haut-standing-algerie-2025.html" class="blog-link">Lire l'Article ↗</a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="text-center mt-blog">
+        <a href="blog.html" class="btn-outline">Voir Tous les Articles</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CONTACT CTA
+  ══════════════════════════════════════ -->
+  <section class="contact-cta" aria-labelledby="cta-title">
+    <div class="contact-cta-bg" aria-hidden="true">
+      <img
+        src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1920&auto=format&fit=crop"
+        alt=""
+        loading="lazy"
+      >
+      <div class="cta-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="cta-content fade-in">
+        <p class="section-pre">Votre Projet de Vie</p>
+        <h2 class="cta-title" id="cta-title">
+          Prêt à Investir<br>
+          <em>dans l'Excellence ?</em>
+        </h2>
+        <p class="cta-desc">
+          Notre équipe d'experts est à votre disposition pour vous accompagner
+          dans votre projet immobilier de prestige à Alger.
+        </p>
+        <div class="cta-contact-info">
+          <a href="tel:+213560902830" class="cta-phone">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 01.01 3.18A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            +213 560 90 28 30
+          </a>
+          <span class="cta-sep" aria-hidden="true">◆</span>
+          <a href="mailto:contact@amkpromotion.com" class="cta-email">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            contact@amkpromotion.com
+          </a>
+        </div>
+        <a href="contact.html" class="btn-gold large">Prendre Rendez-Vous</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo footer-logo-link" aria-label="AMK Hebbache Immobilier — Accueil">
+            <span class="logo-amk">AMK</span>
+            <div class="logo-text">
+              <span>HEBBACHE</span>
+              <small>IMMOBILIER</small>
+            </div>
+          </a>
+          <p class="footer-tagline">
+            Promoteur immobilier de prestige à Alger depuis plus de 30 ans.
+            Sophisitication, confort et qualité sans pareille.
+          </p>
+          <div class="footer-social" aria-label="Réseaux sociaux">
+            <a href="https://www.facebook.com/amk.hebbache.immobilier/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/amk.hebbache.immobilier/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="https://www.youtube.com/@hebbachepromotion" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/company/hebbache-promotion" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <nav class="footer-links" aria-label="Nos projets">
+          <h5>Nos Projets</h5>
+          <ul>
+            <li><a href="residence-floria.html">Résidence Floria</a></li>
+            <li><a href="residence-renaissance.html">Résidence Renaissance</a></li>
+            <li><a href="residence-el-djenane.html">Résidence El Djenane</a></li>
+            <li><a href="projets-livres.html">Projets Livrés</a></li>
+            <li><a href="projets-futurs.html">Projets Futurs</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-links" aria-label="À propos">
+          <h5>À Propos</h5>
+          <ul>
+            <li><a href="a-propos.html">Qui Sommes-Nous</a></li>
+            <li><a href="visite-virtuelle.html">Visite Virtuelle</a></li>
+            <li><a href="blog.html">Blog Immobilier</a></li>
+            <li><a href="contact.html">Nous Contacter</a></li>
+            <li><a href="politique-de-cookies.html">Politique de Cookies</a></li>
+            <li><a href="politique-de-confidentialite.html">Confidentialité</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-contact">
+          <h5>Contact</h5>
+          <div class="footer-contact-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 01.01 3.18A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <a href="tel:+213560902830">+213 560 90 28 30</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:contact@amkpromotion.com">contact@amkpromotion.com</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Alger, Algérie</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 AMK Hebbache Immobilier. Tous droits réservés.</p>
+        <div class="footer-legal">
+          <a href="politique-de-cookies.html">Politique de Cookies</a>
+          <a href="politique-de-confidentialite.html">Politique de Confidentialité</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
